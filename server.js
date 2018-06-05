@@ -12,7 +12,7 @@ app.set('views', path.join(__dirname, '/views'));
 
 app.use(parser.urlencoded({extended: true}));
 app.use(parser.json());
-app.use(express.static(path.join('public')));
+app.use(express.static('public'));
 
 app.use('/',routes);
 
